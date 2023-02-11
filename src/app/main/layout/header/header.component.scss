@@ -1,0 +1,47 @@
+@import "../../../../assets/styles/base/variables";
+
+.container {
+  &-logo {
+    flex: 0 0 260px;
+    max-width: 260px;
+  }
+
+  &-menu {
+    flex: 0 0 calc(100% - 260px);
+    max-width: calc(100% - 260px);
+  }
+}
+
+.header {
+  box-shadow: 0 0 0.375rem 0.25rem var(--menu-shadow);
+  //border-bottom: 1px solid var(--border);
+  background-color: var(--white);
+  padding: 0 1.5rem;
+  position: relative;
+  height: 100px;
+
+  .logo-wrapper {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+
+    .logo {
+      max-width: 160px;
+    }
+  }
+
+  @media #{$breakpoint-tablet} {
+    height: 100px;
+    padding: 0 1rem;
+    .logo-wrapper {
+      height: 100px;
+
+      .logo {
+        width: 100px;
+      }
+    }
+
+  }
+}
+

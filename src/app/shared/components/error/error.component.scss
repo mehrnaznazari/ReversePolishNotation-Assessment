@@ -1,0 +1,45 @@
+:host {
+  padding: 0;
+  display: block;
+  //margin-top: -0.5rem;
+  line-height: 1;
+}
+
+.form-error-row {
+  color: var(--text-error);
+  font-weight: normal;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 1px;
+
+  position: absolute;
+  bottom: -0.5rem;
+
+  span {
+    font-size: 0.72rem !important;
+  }
+  i{
+    font-size: 0.75rem;
+    margin-right: 3px;
+  }
+}
+
+@keyframes errorIn {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+}
+
+@keyframes errorOut {
+  to {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+}

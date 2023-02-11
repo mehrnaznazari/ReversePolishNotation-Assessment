@@ -1,0 +1,42 @@
+@import "palet";
+
+:root {
+  --white: #{$white};
+  --text: #{$text};
+  --border: #{$border};
+  --shadow: #{$shadow};
+  --menu-shadow: #{$menu-shadow};
+  --placeholder: #{$gray-1};
+  --background-body: #{$background-body};
+  --foter-text: #{$gray-1};
+  --link: #{$light-blue-1};
+  //--background-container: #{$background-bg};
+
+  // Form
+  --input-placeholder: #{$gray-1};
+  --input-readonly-text: #{$gray-1};
+  --input-text: #{$navy-blue};
+  --input-error: #{$red-1};
+  --text-error: #{$red-1};
+  --input-background: #{$gray-3};
+  --input-border: #{$border};
+  --input-focus: #{$border-focus};
+
+  --button-primary: #{$purple-1};
+  --button-primary-hover:  #{$purple-2};
+  --button-primary-focus:  #{$purple-3};
+  --button-label-primary: #{$purple-4};
+
+
+  // Toast
+  --toast-info: #{$light-blue-1};
+  --toast-warning: #{$orange-1};
+  --toast-error: #{$red-2};
+  --toast-success: #{$green-1};
+  --toast-icon-info: #{$light-blue-2};
+  --toast-icon-warning: #{$orange-2};
+  --toast-icon-error: #{$red-3};
+  --toast-icon-success: #{$green-2};
+}
+
+

@@ -1,0 +1,36 @@
+<div class="container f-wrapper cart-wrapper">
+    <div class="calculator-center-header">
+        <h1>Calculate Reverse Polish Notation Expression </h1>
+        <p>Enter your desired array. In the end, the final result is calculated based on the reverse polish notation
+            data structure.</p>
+    </div>
+
+    <div class="container cart-body calculator">
+        <form class="col-6">
+            <div>
+                <label for="calculator">Input (Array)</label>
+                <input type="text"
+                       id="calculator"
+                       name="calculator"
+                       [(ngModel)]="inputArray"
+                       #ctrl="ngModel"
+                       required
+                       placeholder='["2","1","+","3","*"]' />
+                <button type="submit"
+                        class="btn btn-primary"
+                        [disabled]="!ctrl.valid"
+                        (click)="calculate()">
+                    Calculate !
+                </button>
+            </div>
+            <div class="result btn-label-primary" *ngIf="result">
+                <h3>result: {{result}}</h3>
+            </div>
+        </form>
+        <div class="col-6">
+            <img class="img-fluid" src="assets/images/sitting-girl-with-laptop-light.png" alt="Calculator" width="400"/>
+        </div>
+    </div>
+
+</div>
+

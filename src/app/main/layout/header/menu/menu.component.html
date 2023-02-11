@@ -1,0 +1,20 @@
+<div class="menu-wrapper">
+    <ul class="menu-wide">
+        <li *ngFor="let menuItem of menuItems">
+            <a [routerLinkActive]="'active'"
+               [routerLink]="[menuItem.link]"
+            >
+                <i [ngClass]="menuItem.icon"></i>
+                {{menuItem.title}}
+            </a>
+        </li>
+        <li (click)="auth.logOut()">
+            <span>
+                <i [ngClass]="logOut.icon"></i>
+                {{logOut.title}}
+            </span>
+        </li>
+    </ul>
+</div>
+
+
